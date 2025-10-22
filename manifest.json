@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Shorts Auto Scroll",
-    "version": "1.1",
+    "name": "Shcroll",
+    "version": "1.2",
     "description": "Automatically scrolls to the next YouTube Short when one ends.",
     "permissions": ["storage", "scripting"],
     "host_permissions": ["*://www.youtube.com/*"],
@@ -13,9 +13,11 @@
         "run_at": "document_idle"
       }
     ],
-    "options_page": "options.html",
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Shcroll Settings"
+    },
     "background": {
       "service_worker": "background.js"
     }
   }
-  
